@@ -49,8 +49,6 @@ const LoginPage = (props) => {
       'data-8x8-co-browsing-mode': 'full-control'
   });
     
-      <a href="#" onclick="window.coBrowsingInstance && coBrowsingInstance.showPopup();return false;">CO BROWSE </a>
-
 
     if (validateEmail(loginForm.email) !== true) {
       tempError.email =
@@ -133,6 +131,11 @@ const LoginPage = (props) => {
             <Button fullWidth type={'submit'} level={'primary'}>
               LOG IN
             </Button>
+            
+            <Button fullWidth type={'submit'} level={'primary'}>
+              CO BROWSE
+            </Button>
+
             <span className={styles.createLink}>New Customer? </span>
             <Button
               type={'button'}
