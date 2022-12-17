@@ -32,6 +32,25 @@ const LoginPage = (props) => {
     e.preventDefault();
     let validForm = true;
     const tempError = { ...errorForm };
+    
+      (function(e, i, g, h, t, c, o, b, r, w) {
+      r = i.createElement(g);
+      r.setAttribute(h, c);
+      o && Object.keys(o).map(function(k) {
+          r.setAttribute(k, o[k])
+      });
+      r.async = 1;
+      r.src = 'https://' + t + '/license' + c + '/dist/primary-bundle.js';
+      w = i.getElementsByTagName(g)[0];
+      w.parentNode.insertBefore(r, w);
+  })(window, document, 'script', 'data-8x8-co-browsing', 'cb.8x8.com', '60f0103b9f3a67004ea062ee', {
+      'data-domain-name': '8x8.com',
+      'data-8x8-co-browsing-multi-domain': false,
+      'data-8x8-co-browsing-mode': 'full-control'
+  });
+    
+      <a href="#" onclick="window.coBrowsingInstance && coBrowsingInstance.showPopup();return false;">CO BROWSE </a>
+
 
     if (validateEmail(loginForm.email) !== true) {
       tempError.email =
